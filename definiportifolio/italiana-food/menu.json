@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Margherita Classica",
+    "description": "Molho de tomate artesanal, mozzarella fresh, manjericão fresco e azeite extravirgem galo.",
+    "price": 48.00,
+    "category": "pizzas",
+    "spicy": false,
+    "vegetarian": true
+  },
+  {
+    "id": 2,
+    "name": "Calabresa com Cebola",
+    "description": "Molho de tomate caseiro, mozzarella fresca, calabresa artesanal fatiada e cebola roxa marinada.",
+    "price": 52.00,
+    "category": "pizzas",
+    "spicy": false,
+    "vegetarian": false
+  },
+  {
+    "id": 3,
+    "name": "Carbonara Romana",
+    "description": "Spaghetti grano duro, guanciale crocante, gema de ovo caipira, queijo pecorino e pimenta preta moida na hora.",
+    "price": 64.00,
+    "category": "massas",
+    "spicy": false,
+    "vegetarian": false
+  },
+  {
+    "id": 4,
+    "name": "Fettuccine ai Funghi",
+    "description": "Massa artesanal fresca com molho cremoso de funghi porcini e cogumelos frescos de Paris sauté.",
+    "price": 59.00,
+    "category": "massas",
+    "spicy": false,
+    "vegetarian": true
+  },
+  {
+    "id": 5,
+    "name": "Bruschetta Tradizionale",
+    "description": "Fatias de pão italiano tostadas na grelha, esfregadas com alho, tomates concassé marinados e manjericão.",
+    "price": 28.00,
+    "category": "entradas",
+    "spicy": false,
+    "vegetarian": true
+  },
+  {
+    "id": 6,
+    "name": "Carpaccio di Manzo",
+    "description": "Fatias finíssimas de filé mignon cru, molho de mostarda dijon e alcaparras, rúcula fresca e lascas de grana padano.",
+    "price": 42.00,
+    "category": "entradas",
+    "spicy": false,
+    "vegetarian": false
+  },
+  {
+    "id": 7,
+    "name": "Tiramisù della Casa",
+    "description": "Receita clássica veneta com biscoitos savoiardi embebidos em café espresso forte, licor amaretto e creme mascarpone aerado.",
+    "price": 32.00,
+    "category": "sobremesas",
+    "spicy": false,
+    "vegetarian": true
+  },
+  {
+    "id": 8,
+    "name": "Panna Cotta al Limone",
+    "description": "Flan italiano clássico de creme de leite aromatizado com fava de baunilha e calda cítrica de limão siciliano.",
+    "price": 26.00,
+    "category": "sobremesas",
+    "spicy": false,
+    "vegetarian": true
+  }
+]

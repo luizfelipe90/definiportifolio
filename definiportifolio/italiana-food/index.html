@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italiana Food – Gastronomia Italiana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <div class="nav-logo">🍕 Italiana Food</div>
+        <ul class="nav-links">
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#api">API</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="../index.html" class="nav-back">← Portal</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-badge">Aberto Todos os dias · 12h às 23h</div>
+        <h1 class="hero-title">Sabor da Itália<br><em>na sua mesa</em></h1>
+        <p class="hero-sub">Ingredientes frescos, receitas de família e a melhor experiência gastronômica italiana da cidade.</p>
+        <div class="hero-btns">
+            <a href="#cardapio" class="btn btn-primary">Ver Cardápio</a>
+            <a href="#api" class="btn btn-outline">Explorar API</a>
+        </div>
+        <div class="hero-pills">
+            <span>🌿 Sem conservantes</span>
+            <span>🚚 Entrega rápida</span>
+            <span>⭐ 4.9 no Google</span>
+        </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section class="section" id="cardapio">
+        <div class="container">
+            <span class="section-tag">Nosso cardápio</span>
+            <h2 class="section-title">Pratos da Casa</h2>
+            <div class="filter-bar">
+                <button class="filter active" data-cat="all">Todos</button>
+                <button class="filter" data-cat="entradas">Entradas</button>
+                <button class="filter" data-cat="pizzas">Pizzas</button>
+                <button class="filter" data-cat="massas">Massas</button>
+                <button class="filter" data-cat="sobremesas">Sobremesas</button>
+            </div>
+            <div class="menu-grid" id="menu-grid">
+                <p class="loading">Carregando...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- API EXPLORER -->
+    <section class="section section--dark" id="api">
+        <div class="container">
+            <span class="section-tag">Para desenvolvedores</span>
+            <h2 class="section-title">Console da API</h2>
+            <p class="section-desc">Teste os endpoints fictícios da Italiana Food e veja as respostas JSON em tempo real.</p>
+
+            <div class="api-layout">
+                <div class="api-panel">
+                    <h3>Montar Requisição</h3>
+                    <div class="tab-row" id="tabs">
+                        <button class="tab active" data-method="GET" data-url="menu-all">GET /menu</button>
+                        <button class="tab" data-method="GET" data-url="menu-cat">GET /menu?category</button>
+                        <button class="tab" data-method="GET" data-url="menu-id">GET /menu/:id</button>
+                        <button class="tab" data-method="POST" data-url="order">POST /order</button>
+                    </div>
+
+                    <div id="param-cat" class="param" style="display:none">
+                        <label>Categoria</label>
+                        <select id="cat-val" class="input">
+                            <option value="entradas">entradas</option>
+                            <option value="pizzas">pizzas</option>
+                            <option value="massas">massas</option>
+                            <option value="sobremesas">sobremesas</option>
+                        </select>
+                    </div>
+                    <div id="param-id" class="param" style="display:none">
+                        <label>ID do prato (1–8)</label>
+                        <input type="number" id="id-val" class="input" value="1" min="1" max="8">
+                    </div>
+                    <div id="param-body" class="param" style="display:none">
+                        <label>Body JSON</label>
+                        <textarea id="body-val" class="input mono" rows="5">{ "customerName": "João", "items": [{"id":3,"qty":1},{"id":7,"qty":2}] }</textarea>
+                    </div>
+
+                    <div class="url-preview">
+                        <span class="method-badge" id="method-badge">GET</span>
+                        <span class="url-text" id="url-text">https://api.italiana.food/menu</span>
+                    </div>
+
+                    <button class="btn btn-primary full" id="btn-send">Enviar Requisição</button>
+                </div>
+
+                <div class="terminal">
+                    <div class="terminal-bar">
+                        <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                        <span class="tbar-title">Response</span>
+                        <span id="status-tag" class="status-tag">—</span>
+                    </div>
+                    <pre id="res-out" class="terminal-body mono">// Clique em "Enviar Requisição"</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO / FOOTER -->
+    <footer class="footer" id="contato">
+        <div class="container footer-inner">
+            <div>
+                <div class="footer-logo">🍕 Italiana Food</div>
+                <p class="footer-desc">Gastronomia italiana autêntica desde 1998.</p>
+            </div>
+            <div class="footer-info">
+                <p>📍 Rua das Flores, 200 – São Paulo</p>
+                <p>📞 (11) 3000-0000</p>
+                <p>✉️ reservas@italianafood.com.br</p>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2026 Italiana Food · Projeto Acadêmico</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

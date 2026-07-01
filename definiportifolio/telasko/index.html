@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telasko – Barbearia Moderna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <div class="nav-logo">💈 Telasko</div>
+        <ul class="nav-links">
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#agendamento">Agendar</a></li>
+            <li><a href="../index.html" class="nav-back">← Portal</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-label">Barbearia Premium · Desde 2005</div>
+        <h1 class="hero-title">Estilo é<br><em>nossa tradição</em></h1>
+        <p class="hero-sub">Do corte clássico à barba na navalha — a Telasko entrega excelência em cada detalhe. Agende e transforme seu visual hoje.</p>
+        <div class="hero-btns">
+            <a href="#agendamento" class="btn btn-primary">Agendar Horário</a>
+            <a href="#services" class="btn btn-outline">Ver Serviços</a>
+        </div>
+        <div class="hero-badges">
+            <span>⭐ 4.9 Avaliação</span>
+            <span>750+ Clientes</span>
+            <span>🏆 Melhor do Bairro</span>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+        <div class="container">
+            <span class="section-tag">O que oferecemos</span>
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="svc-icon">✂️</div>
+                    <h3>Corte de Cabelo</h3>
+                    <p>Degradê, corte social, undercut ou clássico. Cada corte é adaptado ao seu rosto e estilo.</p>
+                    <span class="svc-price">R$ 50,00</span>
+                </div>
+                <div class="service-card">
+                    <div class="svc-icon">🪒</div>
+                    <h3>Barba na Navalha</h3>
+                    <p>Toalha quente, alinhamento preciso e finalização com óleos hidratantes de haute qualité.</p>
+                    <span class="svc-price">R$ 40,00</span>
+                </div>
+                <div class="service-card svc-highlight">
+                    <div class="svc-badge">+ Popular</div>
+                    <div class="svc-icon">🔥</div>
+                    <h3>Combo Completo</h3>
+                    <p>Corte premium + Barba na navalha + Hidratação facial. A experiência Telasko completa.</p>
+                    <span class="svc-price">R$ 80,00</span>
+                </div>
+                <div class="service-card">
+                    <div class="svc-icon">💆‍♂️</div>
+                    <h3>Tratamento VIP</h3>
+                    <p>Cabelo, barba, lavagem com shampoo tratante e massagem capilar. Relaxe e renove.</p>
+                    <span class="svc-price">R$ 110,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AGENDAMENTO -->
+    <section class="section section--dark" id="agendamento">
+        <div class="container">
+            <span class="section-tag">Só leva 1 minuto</span>
+            <h2 class="section-title">Reserve seu Horário</h2>
+            <p class="section-desc">Escolha o serviço, o profissional e o melhor horário para você.</p>
+
+            <div class="booking-wrap">
+                <!-- FORM -->
+                <form class="booking-form" id="booking-form">
+                    <div class="two-col">
+                        <div class="form-group">
+                            <label>Nome completo</label>
+                            <input type="text" id="f-name" class="input" placeholder="Ex: João Silva" required>
+                        </div>
+                        <div class="form-group">
+                            <label>WhatsApp</label>
+                            <input type="tel" id="f-phone" class="input" placeholder="(11) 9 0000-0000" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Serviço</label>
+                            <select id="f-service" class="input" required>
+                                <option value="" disabled selected>Escolha…</option>
+                                <option value="Corte de Cabelo|50">Corte de Cabelo – R$ 50</option>
+                                <option value="Barba na Navalha|40">Barba na Navalha – R$ 40</option>
+                                <option value="Combo Completo|80">Combo Completo – R$ 80</option>
+                                <option value="Tratamento VIP|110">Tratamento VIP – R$ 110</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Barbeiro</label>
+                            <select id="f-barber" class="input" required>
+                                <option value="" disabled selected>Escolha…</option>
+                                <option>Diego – Cortes Modernos</option>
+                                <option>Lucas – Navalha Tradicional</option>
+                                <option>Mateus – Visagismo & Barbas</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Data</label>
+                            <input type="date" id="f-date" class="input" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Horário</label>
+                            <select id="f-time" class="input" required>
+                                <option value="" disabled selected>Horário…</option>
+                                <option>09:00</option><option>10:00</option><option>11:00</option>
+                                <option>13:00</option><option>14:00</option><option>15:00</option>
+                                <option>16:00</option><option>17:00</option><option>18:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary full">Confirmar Agendamento</button>
+                </form>
+
+                <!-- CONFIRMAÇÃO -->
+                <div class="confirm-box" id="confirm-box" style="display:none">
+                    <div class="confirm-icon">✓</div>
+                    <h3>Horário Confirmado!</h3>
+                    <p>Seu agendamento foi registrado com sucesso. Até lá!</p>
+                    <div class="confirm-table">
+                        <div class="cr"><span>Cliente</span><strong id="c-name"></strong></div>
+                        <div class="cr"><span>Serviço</span><strong id="c-service"></strong></div>
+                        <div class="cr"><span>Profissional</span><strong id="c-barber"></strong></div>
+                        <div class="cr"><span>Data</span><strong id="c-date"></strong></div>
+                        <div class="cr"><span>Horário</span><strong id="c-time"></strong></div>
+                        <div class="cr cr--total"><span>Total</span><strong id="c-price"></strong></div>
+                    </div>
+                    <button class="btn btn-outline-dark full" id="btn-reset">Fazer outro agendamento</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <div class="footer-logo">💈 Telasko</div>
+                <p class="footer-desc">Barbearia moderna com tradição clássica.</p>
+            </div>
+            <div class="footer-info">
+                <p>📍 Av. Principal, 500 – São Paulo</p>
+                <p>📞 (11) 4000-0000</p>
+                <p>🕐 Seg–Sáb: 09h às 19h</p>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2026 Telasko Barbearia · Projeto Acadêmico</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
